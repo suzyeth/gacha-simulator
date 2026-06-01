@@ -1,0 +1,21 @@
+# Dev-only artifacts that should not ship to Vercel
+.claude/
+docs/
+examples/
+scripts/
+src/engine/__tests__/
+src/importers/__tests__/
+src/engine/rules/__tests__/
+src/test/
+*.test.ts
+*.test.tsx
+
+# Sensitive — never deploy local XM source tables (keep on author machine only)
+# (XM tables live in C:/Users/recep/Desktop/XM抽卡/, not in this repo, so this is
+#  documentation of intent, not actual exclusion)
+
+# Local config + cache
+.env.local
+.vite
+node_modules/.vite/
+coverage/
