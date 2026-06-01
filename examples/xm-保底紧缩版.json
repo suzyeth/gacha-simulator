@@ -1,0 +1,105 @@
+{
+  "id": "xm-tight-pity",
+  "name": "XM 保底紧缩版 (8/40)",
+  "description": "测试用：smallBaodi 从 10→8，bigBaodi 从 50→40，看玩家体验变化",
+  "buckets": [
+    {
+      "id": "20000",
+      "name": "S 皮肤箱",
+      "kind": "box",
+      "weight": 0.03,
+      "color": "#f5a623",
+      "contents": [
+        { "resId": "80001", "weight": 7100 },
+        { "resId": "80002", "weight": 7100 },
+        { "resId": "80003", "weight": 7100 },
+        { "resId": "80005", "weight": 7100 },
+        { "resId": "80007", "weight": 7100 },
+        { "resId": "80008", "weight": 7100 },
+        { "resId": "80009", "weight": 7100 },
+        { "resId": "80010", "weight": 7100 },
+        { "resId": "80011", "weight": 7100 },
+        { "resId": "90101", "weight": 7180 },
+        { "resId": "90102", "weight": 7180 },
+        { "resId": "90106", "weight": 7180 },
+        { "resId": "90107", "weight": 7180 },
+        { "resId": "90108", "weight": 7180 }
+      ]
+    },
+    {
+      "id": "10014",
+      "name": "普通宝石匣",
+      "kind": "box",
+      "weight": 5,
+      "color": "#7ed321",
+      "contents": [
+        { "resId": "gem-1", "weight": 59800 },
+        { "resId": "gem-2", "weight": 30000 },
+        { "resId": "gem-3", "weight": 9900 },
+        { "resId": "gem-4", "weight": 200 },
+        { "resId": "gem-5", "weight": 90 },
+        { "resId": "gem-6", "weight": 9 },
+        { "resId": "gem-7", "weight": 1 }
+      ]
+    },
+    {
+      "id": "10015",
+      "name": "璀璨宝石匣",
+      "kind": "box",
+      "weight": 1,
+      "color": "#bd10e0",
+      "contents": [
+        { "resId": "gem-3", "weight": 59000 },
+        { "resId": "gem-4", "weight": 31000 },
+        { "resId": "gem-5", "weight": 9000 },
+        { "resId": "gem-6", "weight": 900 },
+        { "resId": "gem-7", "weight": 100 }
+      ]
+    },
+    {
+      "id": "10028",
+      "name": "道具箱",
+      "kind": "box",
+      "weight": 70,
+      "color": "#6b7280",
+      "contents": [
+        { "resId": "10001", "weight": 100 },
+        { "resId": "10002", "weight": 100 },
+        { "resId": "10003", "weight": 100 }
+      ]
+    }
+  ],
+  "items": [
+    { "resId": "80001", "name": "莉亚", "type": "皮肤", "quality": "传奇" },
+    { "resId": "80002", "name": "卡莲娜", "type": "皮肤", "quality": "传奇" },
+    { "resId": "80003", "name": "艾拉娜", "type": "皮肤", "quality": "传奇" },
+    { "resId": "80005", "name": "栗小奈", "type": "皮肤", "quality": "传奇" },
+    { "resId": "80007", "name": "殷桃", "type": "皮肤", "quality": "传奇" },
+    { "resId": "80008", "name": "喵莉贝尔", "type": "皮肤", "quality": "传奇" },
+    { "resId": "80009", "name": "卡西", "type": "皮肤", "quality": "传奇" },
+    { "resId": "80010", "name": "卡芙琳", "type": "皮肤", "quality": "传奇" },
+    { "resId": "80011", "name": "薇拉", "type": "皮肤", "quality": "传奇" },
+    { "resId": "90101", "name": "克罗艾", "type": "副官", "quality": "传奇" },
+    { "resId": "90102", "name": "莉娜泽尔", "type": "副官", "quality": "传奇" },
+    { "resId": "90106", "name": "克莱尔", "type": "副官", "quality": "传奇" },
+    { "resId": "90107", "name": "洛可", "type": "副官", "quality": "传奇" },
+    { "resId": "90108", "name": "苏小雨", "type": "副官", "quality": "传奇" },
+    { "resId": "gem-1", "name": "白色宝石", "type": "宝石", "quality": "普通" },
+    { "resId": "gem-2", "name": "绿色宝石", "type": "宝石", "quality": "优秀" },
+    { "resId": "gem-3", "name": "蓝色宝石", "type": "宝石", "quality": "稀有" },
+    { "resId": "gem-4", "name": "紫色宝石", "type": "宝石", "quality": "史诗" },
+    { "resId": "gem-5", "name": "金色宝石", "type": "宝石", "quality": "传奇" },
+    { "resId": "gem-6", "name": "红色宝石", "type": "宝石", "quality": "绝世" },
+    { "resId": "gem-7", "name": "多彩宝石", "type": "宝石", "quality": "神话" },
+    { "resId": "10001", "name": "枪械强化蓝图", "type": "装备图纸" },
+    { "resId": "10002", "name": "头盔强化蓝图", "type": "装备图纸" },
+    { "resId": "10003", "name": "战衣强化蓝图", "type": "装备图纸" }
+  ],
+  "drawModes": [
+    { "id": "normal", "label": "普通抽", "costResId": "6", "costPerOne": 200, "costPerTen": 2000 }
+  ],
+  "rules": [
+    { "type": "cyclic-pity", "params": { "period": 8, "bucketId": "10014" } },
+    { "type": "cyclic-pity", "params": { "period": 40, "bucketId": "20000" } }
+  ]
+}

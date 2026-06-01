@@ -1,0 +1,27 @@
+{
+  "id": "minimal-demo",
+  "name": "最小演示池 (单 bucket)",
+  "description": "演示 schema 最小有效形态：1 个 bucket，3 个物品，1 条规则",
+  "buckets": [
+    {
+      "id": "main",
+      "name": "唯一奖池",
+      "kind": "rarity",
+      "weight": 1,
+      "contents": [
+        { "resId": "common", "weight": 900 },
+        { "resId": "rare", "weight": 90 },
+        { "resId": "legendary", "weight": 10 }
+      ]
+    }
+  ],
+  "items": [
+    { "resId": "common", "name": "普通物品", "quality": "普通" },
+    { "resId": "rare", "name": "稀有物品", "quality": "稀有" },
+    { "resId": "legendary", "name": "传奇物品", "quality": "传奇" }
+  ],
+  "drawModes": [],
+  "rules": [
+    { "type": "cyclic-pity", "params": { "period": 100, "bucketId": "main" } }
+  ]
+}
